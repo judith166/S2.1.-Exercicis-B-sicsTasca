@@ -3,41 +3,66 @@
 
 //Nivell 1
 
+console.log('Exercici 1.1-1 -------->');
 /*
 Exercici 1
 Conversió de funcions: Tens una funció add que accepta dos paràmetres i retorna la seva suma.
 Converteix-la en una funció de fletxa. Per exemple: function add(a, b) {return a + b;}.
 */
 
+/*
+function add (a, b) {
+   return a + b;
+};
+*/
 
+//Funcion de flecha
+let add = (a, b) => a + b;
 
+let resultado = add(3, 9)
+console.log(resultado);
+
+console.log('Exercici 1.1-2 -------->');
 /*
 Exercici 2
 Funció de fletxa sense paràmetres: Crea una funció de fletxa anomenada randomNumber 
 que no necessiti paràmetres i que retorni un número aleatori entre 0 i 100.
 */
 
+const randomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
+const numeroAletorio = randomNumber(1, 100);
+console.log(numeroAletorio);
 
+console.log('Exercici 1.1-3 -------->');
 /*
 Exercici 3
 Ús de 'this' en les funcions de fletxa: Crea una classe person que tingui una propietat
 name i una funció greet que utilitzi una funció de fletxa. La funció ha d'imprimir una 
 salutació que inclogui el nom de la persona. Per exemple: console.log(Hola, ${this.name});.
 */
-
+let person =
 
 
 //Nivell 2
-
+console.log('Exercici 1.1-4 -------->');
 /*
 Exercici 4
 Funció de fletxa dins d'un loop: Crea una funció anomenada printNumbers que accepti un array de 
 números i utilitzi un loop for per imprimir cada número a la consola utilitzant una funció de fletxa.
 */
 
+let Numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-
+const printNumbers = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+    
+}
+ printNumbers(Numeros);
 
 //Nivell 3
 /*
@@ -53,6 +78,7 @@ un missatge a la consola després d'esperar 3 segons.
 //Bloc 1.2: Operador ternari
 
 //Nivell 1
+console.log('Exercici 1.2-1 -------->');
 /*
 Exercici 1
 Operador ternari bàsic: Escriu una funció potConduir que accepti l'edat com a paràmetre i utilitzi 
@@ -71,6 +97,7 @@ function potConduir(edat) {
 
 potConduir(15);
 
+console.log('Exercici 1.2-2 -------->');
 /*
 Exercici 2
 Ús amb operadors de comparació: Escriu una expressió que utilitzi l'operador ternari per determinar 
@@ -93,7 +120,7 @@ function mesGran(num1, num2) {
 mesGran(90, 9);
 
 //Nivell 2
-
+console.log('Exercici 1.2-3 -------->');
 /*Exercici 3
 Ús enllaçat d'operadors ternaris: Escriu una expressió que utilitzi enllaços d'operadors ternaris 
 per determinar si un número és positiu, negatiu o zero.
@@ -106,18 +133,17 @@ let b = 0;
 let c = 0;
 
 function trobarMaxim(a, b, c) {
-    if (a > 0, b> 0, c> 0 ) {
+    if (a > 0, b > 0, c > 0 ) {
         console.log('és positiu');
-    } else if (a < 0, b < 0, c< 0) {
+    } else if (a < 0, b < 0, c < 0) {
         console.log('es negatiu');
-    } default {
-        console.log('es zero');
     }
 }
 
 trobarMaxim(8, 5, 10);
 
 //Nivell 3
+console.log('Exercici 1.2-4 -------->');
 /*
 Exercici 4
 Operador ternari dins un bucle: Escriu una funció parOImpar que accepti un array de números 
@@ -315,7 +341,7 @@ forEach: Teniu una array de noms. Utilitza forEach per a imprimir cada nom a la 
 let noms = ['Anna', 'Bernat', 'Clara'];
 */
 
-let noms = ['Anna', 'Bernat', 'Clara'];
+//let noms = ['Anna', 'Bernat', 'Clara'];
 
 array.forEach(element => {
     noms.forEach(element => {
