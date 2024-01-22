@@ -43,7 +43,6 @@ Exercici 3
 name i una funció greet que utilitzi una funció de fletxa. La funció ha d'imprimir una 
 salutació que inclogui el nom de la persona. Per exemple: console.log(Hola, ${this.name});.
 */
-let person =
 
 
 //Nivell 2
@@ -64,12 +63,20 @@ const printNumbers = (array) => {
 }
  printNumbers(Numeros);
 
+ console.log('Exercici 1.1-5 -------->');
 //Nivell 3
 /*
 Exercici 5
 Funció de fletxa amb 'setTimeout': Crea una funció de fletxa que imprimeixi 
 un missatge a la consola després d'esperar 3 segons.
 */
+
+const funcionFlecha = () => {
+    console.log('3 seconds leater');
+};
+
+setTimeout(funcionFlecha, 3000);
+  
 
 
 
@@ -180,14 +187,22 @@ dos nombres.
 
 
 //Nivell 2
-
+console.log('Exercici 1.3-3 -------->');
 /*
 Exercici 3
 Ús de callbacks en funcions asíncrones: Escriu una funció esperarISaludar que accepti dos paràmetres: 
 un nom i una funció de callback. La funció ha d'esperar 2 segons i llavors invocar la funció de 
 callback, passant el nom com a paràmetre.
 */
+function esperarISaludar (nom, callback) {
+    let missatge = "Hola, " + nom;
+}
 
+callback(missatge);
+
+esperarISaludar("Lola", function(esperarISaludar) {
+    console.log(esperarISaludar);
+}
 
 
 /*
