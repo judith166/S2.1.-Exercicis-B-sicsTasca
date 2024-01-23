@@ -38,6 +38,19 @@ name i una funció greet que utilitzi una funció de fletxa. La funció ha d'imp
 salutació que inclogui el nom de la persona. Per exemple: console.log(Hola, ${this.name});.
 */
 
+class person {
+    constructor(name) {
+      this.name = name;
+    }
+  
+    greet = () => {
+      console.log(`Hola, ${this.name}!`);
+    };
+  }
+  
+  const person1 = new person("Ismael");
+  person1.greet();
+
 
 //Nivell 2
 console.log('Exercici 1.1-4 -------->');
